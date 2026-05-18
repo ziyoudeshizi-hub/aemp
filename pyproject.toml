@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aemp"
+version = "0.1.0"
+description = "AI Episodic Memory Protocol - Structured episodic memory sharing between AI agents"
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+authors = [
+    { name = "Zhenhua Jia", email = "ziyoudeshizi@gmail.com" }
+]
+keywords = ["ai", "agent", "memory", "protocol", "multi-agent", "episodic"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.scripts]
+aemp = "aemp_cli:main"
+
+[project.urls]
+Homepage = "https://github.com/maomao/aemp"
+Changelog = "https://github.com/maomao/aemp/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["aemp*"]
+
+[tool.setuptools]
+py-modules = ["aemp_cli", "aemp_bridge"]
