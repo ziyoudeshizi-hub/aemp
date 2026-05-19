@@ -1,8 +1,8 @@
 # AEMP — AI Episodic Memory Protocol
 
-[![PyPI version](https://img.shields.io/pypi/v/aemp.svg)](https://pypi.org/project/aemp/)
+[![PyPI version](https://badge.fury.io/py/aemp.svg)](https://pypi.org/project/aemp/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A lightweight, structured protocol for AI agents to **share episodic memories, learned insights, and failure records** — with confidence scoring and temporal validity.
 
